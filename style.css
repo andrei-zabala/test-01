@@ -4,18 +4,166 @@
 }
 
 .logo {
-    font-size: .8rem;
+    font-size: 30px;
+    font-family: Franklin Gothic Medium;
     font-weight: 600;
+    position: absolute;
+    float: left;
+    padding: 15px 0px 15px 40px;
+    color: #000080;
 }
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     flex-direction: row;
 }
 
 ul {
+    position: sticky;
     display: flex;
     list-style: none;
-    column-gap: 10px;
 }
+
+li {
+    float: right;
+    padding: 20px 5px 20px;
+}
+  
+li a {  
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+  
+li a:hover {
+    background-color: #000080;
+    color: white;
+}
+
+.bground {
+    text-align: center; 
+    background-image: url('bg.jpg');
+    background-position: center;
+    height:470px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner {
+    color: white;
+    font-family: Franklin Gothic Medium;
+    font-size: 50px;
+    padding-top: 150px;
+}
+
+.bannertxt {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 0px 50px 0px;
+}
+
+a.started {
+    background-color: #0d0dbe;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: #000000a4 0px 5px 20px;
+}
+
+a.started:hover {
+    background-color: #000080;
+}
+ .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ }
+
+.box {
+    font-family: Franklin Gothic Medium;
+    font-size: 15px;
+    color: #000080;
+    padding-top: 30px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: #000000a4 0px 5px 20px;
+}
+ .content {
+    font-family: Arial;
+    padding:20px;
+    color: black;
+ }
+
+.footer {
+    font-family: Franklin Gothic Medium;
+    font-size: 25px;
+    color: white;
+    padding-top: 30px;
+    width: 1120px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: #0d0dbe;
+    box-shadow: #000000a4 0px 5px 20px;
+}
+
+.foottxt {
+    font-family: Arial;
+    font-size: 18px;
+    padding: 30px;
+    color: white;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+input[type=text] {
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+}
+
+a.subscribe {
+    background-color: #0d0dbe;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding-top: 15px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: #000000a4 0px 5px 20px;
+}
+
+a.subscribe:hover {
+    background-color: #000080;
+}
+
