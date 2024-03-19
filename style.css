@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Navbar Logo (Safario) */
 .logo {
     font-size: 30px;
     font-family: Franklin Gothic Medium;
@@ -13,6 +14,7 @@
     color: #000080;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -44,6 +46,7 @@ li a:hover {
     color: white;
 }
 
+/* Background Image */
 .bground {
     text-align: center; 
     background-image: url('bg.jpg');
@@ -54,6 +57,7 @@ li a:hover {
     position: relative;
 }
 
+/* Texts on Background Image */
 .banner {
     color: white;
     font-family: Franklin Gothic Medium;
@@ -68,6 +72,7 @@ li a:hover {
     margin: 0px 50px 0px;
 }
 
+/* Button on Background image */
 a.started {
     background-color: #0d0dbe;
     color: #ffffff;
@@ -91,8 +96,9 @@ a.started:hover {
     display: flex;
     justify-content: center;
     flex-direction: row;
- }
+}
 
+/* Box and texts on body */
 .box {
     font-family: Franklin Gothic Medium;
     font-size: 15px;
@@ -110,6 +116,7 @@ a.started:hover {
     color: black;
  }
 
+ /* Box and texts on footer */
 .footer {
     font-family: Franklin Gothic Medium;
     font-size: 25px;
@@ -130,6 +137,7 @@ a.started:hover {
     color: white;
 }
 
+/* Email form */
 .email {
     display: flex;
     justify-content: center;
@@ -148,6 +156,7 @@ input[type=text] {
     padding: 12px 20px 12px 20px;
 }
 
+/* Subscribe button */
 a.subscribe {
     background-color: #0d0dbe;
     color: #ffffff;
@@ -166,4 +175,3 @@ a.subscribe {
 a.subscribe:hover {
     background-color: #000080;
 }
-
