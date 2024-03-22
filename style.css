@@ -3,19 +3,33 @@
     padding: 0;
 }
 
-/* Navbar Logo (Safario) */
+/* Navbar */
+.navbar {
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .logo {
-    font-size: 30px;
+    font-size: 20px;
     font-family: Franklin Gothic Medium;
     font-weight: 600;
-    position: absolute;
+    margin: 8px 0px 8px 12px;
     float: left;
-    padding: 15px 0px 15px 40px;
     color: #000080;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 8px 12px 8px 0px;
+    float: right;
+}
+
 /* Navbar */
-nav {
+/* nav {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -44,13 +58,13 @@ li a {
 li a:hover {
     background-color: #000080;
     color: white;
-}
+} */
 
 /* Background Image */
 .bground {
     text-align: center; 
     height:470px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background-image: url('bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -62,13 +76,13 @@ li a:hover {
 .banner {
     color: white;
     font-family: Franklin Gothic Medium;
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 150px;
 }
 
 .bannertxt {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 10px;
     margin: 0px 50px 0px;
 }
@@ -77,17 +91,18 @@ li a:hover {
 .base-container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 /* Search Form */
 input[type=destination] {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 12px;
     height: 58px;
     background-color: white;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 0px 50px 0px 10px;
+    padding: 0px 20px 0px 10px;
     margin-top: 20px;
     border: 4px solid #0d0dbe;
 }
@@ -97,42 +112,43 @@ a.datebtn {
     font-family: Arial;
     background-color: white;
     color: black;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 20px;
-    padding: 14px 40px 0px 12px;
-    height: 36px;
+    padding: 19px 12px 0px 12px;
+    height: 31px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     border-top: 4px solid #0d0dbe;
     border-bottom: 4px solid #0d0dbe;
+    border-right: 4px solid #0d0dbe;
 }
 
 a.roombtn {
     font-family: Arial;
     background-color: white;
     color: black;
-    font-size: 16px;
-    margin-top: 20px;
-    padding: 14px 40px 0px 12px;
-    height: 36px;
+    font-size: 12px;
+    padding: 19px 28.1px 0px 28.1px;
+    height: 31px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border: 4px solid #0d0dbe;
+    border-bottom: 4px solid #0d0dbe;
+    border-right: 4px solid #0d0dbe;
+    border-left: 4px solid #0d0dbe;
 }
 
 a.search {
     background-color: #0d0dbe;
     color: #ffffff;
     font-family: Arial;
-    font-size: 20px;
-    padding-top: 18px;
-    margin-top: 20px;
+    font-size: 16px;
+    padding-top: 16px;
     width: 170px;
-    height: 40px;
+    height: 37px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -174,12 +190,24 @@ a.choose:hover {
 
 .box {
     font-family: Franklin Gothic Medium;
-    font-size: 15px;
+    font-size: 13px;
     color: #000080;
     padding-top: 30px;
     width: 250px;
-    height: 250px;
-    margin: 20px;
+    height: 230px;
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    box-shadow: #000000a4 0px 5px 20px;
+}
+
+.box2 {
+    font-family: Franklin Gothic Medium;
+    font-size: 13px;
+    color: #000080;
+    padding-top: 30px;
+    width: 250px;
+    height: 230px;
+    margin: 0px 10px 0px 10px;
     text-align: center;
     box-shadow: #000000a4 0px 5px 20px;
 }
@@ -196,7 +224,7 @@ a.choose:hover {
     color: #000080;
     width: auto;
     height: 70px;
-    padding: 0px 91px 0px;
+    padding: 0px 200px 0px;
     margin: auto;
     text-align: left;
 }
@@ -395,14 +423,14 @@ a.subscribe:hover {
     text-align: center;
     background-color: #0c0c7b;
 }
-
-@media (max-width: 768px) {
+/* 
+@media (min-width: 768px) {
     li a {  
         padding: 10px;
     }
 
     .banner {
-        font-size: 40px;
+        font-size: 10px;
     }
     
     .bannertxt {
@@ -519,11 +547,4 @@ a.subscribe:hover {
         height: 30px;
     }
 
-
-
-
-
-
-
-    
-}
+} */
