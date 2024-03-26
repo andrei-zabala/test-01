@@ -4,35 +4,29 @@
 }
 
 /* Navbar */
-.navbar {
-    width: auto;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-}
-
-
 .logo {
-    font-size: 20px;
+    font-size: 25px;
     font-family: Franklin Gothic Medium;
     font-weight: 600;
-    margin: 8px 0px 8px 12px;
+    position: absolute;
     float: left;
+    padding: 15px 0px 15px 15px;
     color: #000080;
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
-    margin: 8px 12px 8px 0px;
+    width: 30px;
+    height: 30px;
+    margin: 15px 15px 15px 0px;
     float: right;
+    visibility: visible;
 }
 
-/* Navbar */
-/* nav {
+nav {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    visibility: hidden;
 }
 
 ul {
@@ -58,12 +52,12 @@ li a {
 li a:hover {
     background-color: #000080;
     color: white;
-} */
+}
 
 /* Background Image */
 .bground {
     text-align: center; 
-    height:470px;
+    height:600px;
     margin-bottom: 10px;
     background-image: url('bg.jpg');
     background-position: center;
@@ -72,57 +66,60 @@ li a:hover {
     position: relative;
 }
 
-/* Texts on Background Image */
+/*Background Image texts*/
 .banner {
     color: white;
     font-family: Franklin Gothic Medium;
     font-size: 30px;
-    padding-top: 150px;
+    padding-top: 80px;
 }
 
-.bannertxt {
+.banner-txt {
     color: white;
     font-size: 15px;
     padding-top: 10px;
-    margin: 0px 50px 0px;
+    margin: 0px 25px 20px;
 }
 
-/* Base container */
-.base-container {
+/* Div adjustment */
+.base {
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 
 /* Search Form */
+.search-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+
 input[type=destination] {
     box-sizing: border-box;
     font-size: 12px;
     height: 58px;
+    width: 300px;
+    padding-left: 85px;
     background-color: white;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 0px 20px 0px 10px;
-    margin-top: 20px;
     border: 4px solid #0d0dbe;
 }
 
-/* Used Base container */
 a.datebtn {
     font-family: Arial;
     background-color: white;
     color: black;
     font-size: 12px;
-    margin-top: 20px;
-    padding: 19px 12px 0px 12px;
     height: 31px;
+    width: 292px;
+    padding-top: 19px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border-top: 4px solid #0d0dbe;
-    border-bottom: 4px solid #0d0dbe;
-    border-right: 4px solid #0d0dbe;
+    border: 4px solid #0d0dbe;
 }
 
 a.roombtn {
@@ -130,46 +127,50 @@ a.roombtn {
     background-color: white;
     color: black;
     font-size: 12px;
-    padding: 19px 28.1px 0px 28.1px;
     height: 31px;
+    width: 292px;
+    padding-top: 19px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border-bottom: 4px solid #0d0dbe;
-    border-right: 4px solid #0d0dbe;
-    border-left: 4px solid #0d0dbe;
+    border: 4px solid #0d0dbe;
 }
 
 a.search {
-    background-color: #0d0dbe;
-    color: #ffffff;
     font-family: Arial;
-    font-size: 16px;
-    padding-top: 16px;
-    width: 170px;
-    height: 37px;
+    background-color: #0d0dbe;
+    color: white;
+    font-size: 15px;
+    height: 31px;
+    width: 292px;
+    padding-top: 19px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    border: 4px solid #0d0dbe;
 }
 
 a.search:hover {
     background-color: #000080;
 }
 
-/* Choose type buttons */
-/* Used Base container */
+/*Search buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 a.choose {
     background-color: #0d0dbe;
     color: #ffffff;
     font-family: Arial;
     font-size: 10px;
     padding-top: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 100px;
+    margin: 10px 5px 0px;
+    width: 90px;
     height: 20px;
     text-align: center;
     text-decoration: none;
@@ -182,69 +183,66 @@ a.choose:hover {
 }
 
 /* Page services */
-.body-container {
+.box-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
 }
 
 .box {
     font-family: Franklin Gothic Medium;
-    font-size: 13px;
+    font-size: 15px;
     color: #000080;
     padding-top: 30px;
-    width: 250px;
-    height: 230px;
-    margin: 10px 10px 0px 10px;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
     text-align: center;
     box-shadow: #000000a4 0px 5px 20px;
 }
 
-.box2 {
-    font-family: Franklin Gothic Medium;
-    font-size: 13px;
-    color: #000080;
-    padding-top: 30px;
-    width: 250px;
-    height: 230px;
-    margin: 0px 10px 0px 10px;
-    text-align: center;
-    box-shadow: #000000a4 0px 5px 20px;
-}
- .content {
+ .box-txt {
     font-family: Arial;
-    padding:20px;
+    font-size: 12px;
+    padding: 5px 20px 0px;
     color: black;
 }
 
-/* Destination text */
-.destination-title {
+/* Places or Trending Destinations */
+.place-title {
     font-family: Franklin Gothic Medium;
-    font-size: 23px;
+    font-size: 15px;
     color: #000080;
     width: auto;
     height: 70px;
-    padding: 0px 200px 0px;
+    padding: 0px 10px 0px;
     margin: auto;
-    text-align: left;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.destination-text {
+.place-txt {
     font-family: Arial;
-    font-size: 15px;
+    font-size: 12px;
     color: black;
     padding-top: 5px;
 }
+
+.place-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+}
  
- /* Destination images */
- /* Used Base container */
-.destination-button {
+.place-button {
     color: #ffffff;
     font-family: Arial;
     font-size: 20px;
     padding-top: 30px;
-    width: 535px;
-    height: 250px;
+    width: 330px;
+    height: 200px;
     margin: 20px 5px 5px 5px;
     padding-left: 20px;
     text-align: left;
@@ -258,17 +256,17 @@ a.choose:hover {
     background-size: cover;
 }
 
-.destination-button:hover{
+.place-button:hover{
     opacity: 0.9;
 }
 
-.destination-button2 {
+.place-button2 {
     color: #ffffff;
     font-family: Arial;
     font-size: 20px;
     padding-top: 30px;
-    width: 535px;
-    height: 250px;
+    width: 330px;
+    height: 200px;
     margin: 20px 5px 5px 5px;
     padding-left: 20px;
     text-align: left;
@@ -282,17 +280,17 @@ a.choose:hover {
     background-size: cover;
 }
 
-.destination-button2:hover{
+.place-button2:hover{
     opacity: 0.9;
 }
 
-.destination-button3 {
+.place-button3 {
     color: #ffffff;
     font-family: Arial;
     font-size: 20px;
     padding-top: 30px;
-    width: 346px;
-    height: 250px;
+    width: 330px;
+    height: 200px;
     margin: 5px;
     padding-left: 20px;
     text-align: left;
@@ -306,17 +304,17 @@ a.choose:hover {
     background-size: cover;
 }
 
-.destination-button3:hover{
+.place-button3:hover{
     opacity: 0.9;
 }
 
-.destination-button4 {
+.place-button4 {
     color: #ffffff;
     font-family: Arial;
     font-size: 20px;
     padding-top: 30px;
-    width: 346px;
-    height: 250px;
+    width: 330px;
+    height: 200px;
     margin: 5px;
     padding-left: 20px;
     text-align: left;
@@ -330,17 +328,17 @@ a.choose:hover {
     background-size: cover;
 }
 
-.destination-button4:hover{
+.place-button4:hover{
     opacity: 0.9;
 }
 
-.destination-button5 {
+.place-button5 {
     color: #ffffff;
     font-family: Arial;
     font-size: 20px;
     padding-top: 30px;
-    width: 346px;
-    height: 250px;
+    width: 330px;
+    height: 200px;
     margin: 5px;
     padding-left: 20px;
     text-align: left;
@@ -354,43 +352,47 @@ a.choose:hover {
     background-size: cover;
 }
 
-.destination-button5:hover{
+.place-button5:hover{
     opacity: 0.9;
 }
 
- /* Email */
-.email-container {
+ /* Email subscription */
+.email-title {
     font-family: Franklin Gothic Medium;
-    font-size: 25px;
+    font-size: 15px;
     color: white;
     padding-top: 30px;
     margin: auto;
     margin-top: 30px;
     width: auto;
-    height: 220px;
+    height: 200px;
     text-align: center;
     background-color: #1919e9;
 }
 
-.emailtxt {
+.email-txt {
     font-family: Arial;
-    font-size: 18px;
-    padding: 10px 30px 15px;
+    font-size: 12px;
+    padding: 5px 30px 15px;
     margin-bottom: 20px;
     color: white;
 }
 
-/* Email form */
-/* Used Base container */
+.email-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 input[type=text] {
-    width: 400px;
+    width: 200px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     font-size: 16px;
     background-color: white;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 12px;
+    padding: 10px;
 }
 
 a.subscribe {
@@ -399,8 +401,8 @@ a.subscribe {
     font-family: Arial;
     font-size: 16px;
     padding-top: 14px;
-    width: 120px;
-    height: 33px;
+    width: 100px;
+    height: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -414,137 +416,150 @@ a.subscribe:hover {
 /* Footer */
 .footer {
     font-family: Arial;
-    font-size: 10px;
+    font-size: 8px;
     color: white;
-    padding-top: 20px;
+    padding: 20px 50px 0px;
     width: auto;
     height: 40px;
     margin: auto;
     text-align: center;
     background-color: #0c0c7b;
 }
-/* 
+
 @media (min-width: 768px) {
-    li a {  
-        padding: 10px;
+    .icon {
+        display: none;
+    }
+
+    nav {
+        visibility: visible;
+    }
+
+    .bground {
+        text-align: center; 
+        height: 480px;
     }
 
     .banner {
-        font-size: 10px;
+        font-size: 40px;
+        padding-top: 80px;
     }
     
-    .bannertxt {
-        font-size: 15px;
+    .banner-txt {
+        color: white;
+        font-size: 20px;
+        margin: 0px 50px 30px;
     }
 
-    .base-form {
-        display: flex;
-        justify-content: center;
-        padding: 0px 30px 0px;
+    .search-container {
+        flex-direction: row;
+        width: 1000px;
     }
 
     input[type=destination] {
-        font-size: 14px;
-        height: 50px;
-        padding: 0px 10px 0px 10px;
+        width: 250px;
+        padding-left: 60px;
     }
     
     a.datebtn {
-        font-size: 10px;
-        height: 28px;
+        width: 250px;
     }
     
     a.roombtn {
-        font-size: 10px;
-        height: 28px;
+        width: 250px;
     }
     
     a.search {
-        font-size: 15px;;
-        width: 140px;
-        height: 32px;
+        width: 150px;
+    }
+
+    a.choose {
+        width: 120px;
+        height: 20px;
+    }
+
+    .box-container {
+        flex-direction: row;
+        width: 1200px;
     }
 
     .box {
-        font-size: 12px;
-        color: #000080;
-        padding-top: 20px;
-    }
-
-    .destination-title {
         font-size: 20px;
-        padding-left: 18px;
-        padding-right: 18px;
+        height: 300px;
     }
 
-    .destination-text {
-        font-size: 12px;;
+    .box-txt {
+        font-size: 17px;
     }
-
-    .destination-button {
+    
+    .place-title {
         font-size: 20px;
-        padding-top: 30px;
-        width: 355px;
-        height: 200px;
+        width: 1183px;
+        text-align: left;
     }
 
-    .destination-button2 {
+    .place-txt {
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    .place-container {
+        flex-direction: row;
+        width: 1200px;
+        flex-wrap: wrap;
+    }
+
+    .place-button {
+        width: 570px;
+        height: 300px;
+    }
+
+    .place-button2 {
+        width: 570px;
+        height: 300px;
+    }
+
+    .place-button3 {
+        width: 370px;
+        height: 300px;
+    }
+
+    .place-button4 {
+        width: 370px;
+        height: 300px;
+    }
+
+    .place-button5 {
+        width: 370px;
+        height: 300px;
+    }
+
+    .email-title {
         font-size: 20px;
-        padding-top: 30px;
-        width: 355px;
-        height: 200px;
     }
 
-    .destination-button3 {
-        font-size: 20px;
-        padding-top: 30px;
-        width: 226px;
-        height: 200px;
-    }
-
-    .destination-button4 {
-        font-size: 20px;
-        padding-top: 30px;
-        width: 226px;
-        height: 200px;
-    }
-
-    .destination-button5 {
-        font-size: 20px;
-        padding-top: 30px;
-        width: 226px;
-        height: 200px;
-    }
-
-    .email-container {
-        font-size: 20px;
-        height: 170px;
-    }
-
-    .emailtxt {
-        font-size: 12px;
+    .email-txt {
+        font-size: 17px;
     }
 
     input[type=text] {
-        width: 250px;
-        padding: 8px;
+        width: 400px;
+        font-size: 17px;
+        padding: 10px;
     }
 
     a.subscribe {
-        font-size: 14px;
+        font-size: 17px;
         padding-top: 14px;
-        width: 120px;
-        height: 26px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    .footer {
-        font-family: Arial;
-        font-size: 8px;
+        width: 150px;
         height: 30px;
     }
 
-} */
+    .footer {
+        font-size: 12px;
+        padding: 30px 50px 0px;
+        height: 60px;
+    }
+
+
+}
